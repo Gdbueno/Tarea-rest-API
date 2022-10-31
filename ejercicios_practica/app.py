@@ -123,8 +123,8 @@ def comparativa():
         axis_y = 'EDAD'
         title = 'Gráfico edad'
         x,y = persona.panel()
-        imagen_html = utils.graficar(x,y, axis_x, axis_y, title)
-        return Response(imagen_html.getvalue(), mimetype = 'image/png')
+        image_html = utils.graficar(x,y, axis_x, axis_y, title)
+        return Response(image_html.getvalue(), mimetype = 'image/png')
 
        
     except:
